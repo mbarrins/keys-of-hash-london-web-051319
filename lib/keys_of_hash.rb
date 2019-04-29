@@ -7,8 +7,8 @@ class Hash
     arguments.each do |argument|
       self.select{|key, value| keys_of_args << key if value == arguments}
     end
+    keys_of_args
   end
-  keys_of_args
 end
 
 animals = {"sugar glider"=>"Australia","aye-aye"=> "Madagascar","red-footed tortoise"=>"Panama","kangaroo"=> "Australia","tomato frog"=>"Madagascar","koala"=>"Australia"}
