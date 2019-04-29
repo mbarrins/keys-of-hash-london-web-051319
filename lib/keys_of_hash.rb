@@ -3,13 +3,14 @@ require 'pry'
 class Hash
   def keys_of(*arguments)
     # binding.pry
-    keys_of_args = []
-    arguments.each do |argument|
-      puts arguments.inspect
-      puts argument
-      self.select{|key, value| keys_of_args << key if value == argument}
-    end
-    keys_of_args
+    # keys_of_args = []
+    # arguments.each do |argument|
+    #   puts arguments.inspect
+    #   puts argument
+    #   self.select{|key, value| keys_of_args << key if value == argument}
+    # end
+    # keys_of_args
+    self.select{|key, value| keys_of_args << key if arguments.include?(value)}.keys
   end
 end
 
