@@ -8,6 +8,7 @@ class Hash
       self.select{|key, value| keys_of_args << key if value == arguments}
     end
   end
+  keys_of_args
 end
 
 animals = {"sugar glider"=>"Australia","aye-aye"=> "Madagascar","red-footed tortoise"=>"Panama","kangaroo"=> "Australia","tomato frog"=>"Madagascar","koala"=>"Australia"}
