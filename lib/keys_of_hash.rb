@@ -2,7 +2,7 @@ require 'pry'
 
 class Hash
   def keys_of(*arguments)
-    binding.pry
+    # binding.pry
     keys_of_args = []
     arguments.each do |argument|
       self.select{|key, value| keys_of_args << key if value == arguments}
