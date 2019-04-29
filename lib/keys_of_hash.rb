@@ -10,7 +10,7 @@ class Hash
     #   self.select{|key, value| keys_of_args << key if value == argument}
     # end
     # keys_of_args
-    self.select{|key, value| keys_of_args << key if arguments.include?(value)}.keys
+    self.select{|key, value| arguments.include?(value)}.keys
   end
 end
 
