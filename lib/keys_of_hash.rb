@@ -12,5 +12,5 @@ class Hash
 end
 
 animals = {"sugar glider"=>"Australia","aye-aye"=> "Madagascar","red-footed tortoise"=>"Panama","kangaroo"=> "Australia","tomato frog"=>"Madagascar","koala"=>"Australia"}
-# puts animals.keys_of("Australia").inspect
-puts animals.keys_of('Australia', 'Panama')
+puts animals.keys_of("Australia").inspect
+puts animals.keys_of('Australia', 'Panama').inspect
