@@ -5,7 +5,7 @@ class Hash
     # binding.pry
     keys_of_args = []
     arguments.each do |argument|
-      self.select{|key, value| keys_of_args << key if value == arguments}
+      self.select{|key, value| keys_of_args << key if value == argument}
     end
     keys_of_args
   end
