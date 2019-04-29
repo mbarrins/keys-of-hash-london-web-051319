@@ -3,7 +3,7 @@ require 'pry'
 class Hash
   def keys_of(arguments)
     binding.pry
-    self.select{}|key, value| value == argumments)}
+    self.select{|key, value| value == argumments)}
   end
 end
 
