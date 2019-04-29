@@ -2,8 +2,10 @@ require 'pry'
 
 class Hash
   def keys_of(*arguments)
-    # binding.pry
-    self.select{|key, value| value == arguments}.keys
+    keys_of_args = []
+    arguments.each |argument|
+      self.select{|key, value| keys_of_args << key if value == arguments}
+    end
   end
 end
 
