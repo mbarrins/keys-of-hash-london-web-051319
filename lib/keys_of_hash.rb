@@ -1,6 +1,6 @@
 class Hash
   def keys_of(arguments)
-    self.select
+    self.select(|key, value| value == argumments)
   end
 end
 
